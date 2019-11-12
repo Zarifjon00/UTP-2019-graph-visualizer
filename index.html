@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang=“en”>
+
+<head>
+	<meta charset=“utf-8”>
+	<title> Graph visualiser </title>
+	<link rel="stylesheet" type="text/сss">
+</head>
+
+<body>
+	<div id="top">
+		<h1>Graph visualizer</h1>
+		f(x) = <input type="text" value="tg(x) - 1" id="func" />
+		<input type="button" value="visualize" id="calc_btn" />
+		<div id="ErrorMessage"></div>
+		<div>
+			x ∈ [  <input type="text" value="-10" id="minX" />,
+			<input type="text" value="10" id="maxX" /> ]
+		</div>
+		<div>
+			y ∈ [  <input type="text" value="-10" id="minY" />,
+			<input type="text" value="10" id="maxY" /> ]
+		</div>
+		<div>
+			grid dashX <input type="text" value="1" id="dashX" />,
+			grid dashY <input type="text" value="1" id="dashY" /> 
+		</div>
+		<div>
+			segment step <input type="text" value="1" id="segStepX" />
+		</div>
+	</div>
+	<div id="res"></div>
+	<canvas id="canvas" width="800" height="800"> </canvas>
+	<script src="index.js"> </script>
+</body>
+
+</html>
